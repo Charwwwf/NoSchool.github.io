@@ -31,7 +31,6 @@ body {
     padding: 0 20px;
 }
 
-/* Header styles */
 header {
     background-color: rgba(10, 10, 10, 0.95);
     padding: 20px 0;
@@ -114,7 +113,6 @@ header {
     width: 100%;
 }
 
-/* Hero section for contacts page */
 .hero-contacts {
     padding: 160px 0 80px;
     background: linear-gradient(to bottom, var(--dark-bg), var(--darker-bg));
@@ -158,7 +156,6 @@ header {
     z-index: 2;
 }
 
-/* Contact methods section */
 .contact-methods {
     padding: 80px 0;
     background-color: var(--darker-bg);
@@ -252,7 +249,6 @@ header {
     color: var(--dark-bg);
 }
 
-/* Social media section */
 .social-media {
     padding: 80px 0;
     background-color: var(--dark-bg);
@@ -351,7 +347,6 @@ header {
     font-weight: 600;
 }
 
-/* Contact form section */
 .contact-form-section {
     padding: 80px 0;
     background-color: var(--darker-bg);
@@ -477,7 +472,6 @@ header {
     max-height: 200px;
 }
 
-/* Footer */
 footer {
     background-color: var(--darker-bg);
     padding: 60px 0 30px;
@@ -492,10 +486,86 @@ footer {
     margin-bottom: 40px;
 }
 
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-logo-image {
+    height: 120px;
+    width: auto;
+    max-width: 80px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 206, 209, 0.2);
+}
+
+.footer-logo-container:hover .footer-logo-image {
+    transform: scale(1.05);
+}
+
+.footer-logo-text {
+    flex: 1;
+}
+
 .footer-logo {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.8rem;
-    margin-bottom: 15px;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--teal-primary);
+    position: relative;
+    display: inline-block;
+}
+
+.footer-logo::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--teal-primary), transparent);
+}
+
+.footer-brand p {
+    color: var(--text-gray);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgba(0, 206, 209, 0.1);
+    color: var(--teal-primary);
+    text-decoration: none;
+    transition: all 0.3s;
+    font-size: 1.2rem;
+}
+
+.footer-social a:hover {
+    background-color: var(--teal-primary);
+    color: var(--dark-bg);
+    transform: translateY(-3px);
 }
 
 .footer-heading {
@@ -517,42 +587,20 @@ footer {
     color: var(--teal-primary);
 }
 
+.footer-contacts {
+    color: var(--text-gray);
+}
+
 .footer-contacts p {
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
-    color: var(--text-gray);
 }
 
 .footer-contacts i {
     margin-right: 10px;
     color: var(--teal-primary);
     width: 20px;
-}
-
-.footer-social {
-    display: flex;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.footer-social a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: rgba(0, 206, 209, 0.1);
-    color: var(--teal-primary);
-    text-decoration: none;
-    transition: all 0.3s;
-}
-
-.footer-social a:hover {
-    background-color: var(--teal-primary);
-    color: var(--dark-bg);
-    transform: translateY(-3px);
 }
 
 .copyright {
@@ -563,14 +611,12 @@ footer {
     color: var(--text-gray);
 }
 
-/* Animations */
 @keyframes pulse {
     0% { opacity: 0.5; }
     50% { opacity: 1; }
     100% { opacity: 0.5; }
 }
 
-/* Mobile menu */
 .mobile-menu-btn {
     display: none;
     background: none;
@@ -580,7 +626,6 @@ footer {
     cursor: pointer;
 }
 
-/* Responsive styles */
 @media (max-width: 992px) {
     .hero-title {
         font-size: 2.8rem;
@@ -594,6 +639,17 @@ footer {
     .form-info {
         padding-right: 0;
         text-align: center;
+    }
+    
+    .footer-logo-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .footer-logo-image {
+        height: 100px;
+        max-width: 70px;
     }
 }
 
@@ -639,6 +695,21 @@ footer {
     .social-grid {
         grid-template-columns: 1fr;
     }
+    
+    .footer-logo-image {
+        height: 90px;
+        max-width: 60px;
+    }
+    
+    .footer-logo {
+        font-size: 1.8rem;
+    }
+    
+    .footer-social a {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -649,5 +720,19 @@ footer {
     .contact-card,
     .social-card {
         padding: 20px;
+    }
+    
+    .footer-logo-image {
+        height: 80px;
+        max-width: 50px;
+    }
+    
+    .footer-logo {
+        font-size: 1.6rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
     }
 }
