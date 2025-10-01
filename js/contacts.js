@@ -23,7 +23,7 @@ document.querySelectorAll('.contact-btn').forEach(button => {
                 window.location.href = 'tel:+79991234567';
                 break;
             case 'email':
-                window.location.href = 'mailto:info@noschool.ru';
+                window.location.href = 'mailto:vsevolodglotov9875@gmail.com';
                 break;
             case 'map':
                 window.open('https://www.google.com.br/maps/@-7.8917417,-34.9186893,3a,59.5y,210.89h,80.21t/data=!3m7!1e1!3m5!1sFo2xPF5RNTCY6PLCiN8MwA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D9.790000000000006%26panoid%3DFo2xPF5RNTCY6PLCiN8MwA%26yaw%3D210.89!7i13312!8i6656?hl=pt-BR&entry=ttu&g_ep=EgoyMDI1MDkyMS4wIKXMDSoASAFQAw%3D%3D', '_blank');
@@ -121,4 +121,5 @@ document.addEventListener('DOMContentLoaded', function() {
     
     window.addEventListener('scroll', checkScroll);
     checkScroll(); // Check on initial load
+
 });
