@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - NoSchool</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styledark/contacts.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/png">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo">No<span class="logo-accent">School</span></a>
+                <nav class="nav" id="mainNav">
+                    <a href="indexdark.html" class="nav-link">Главная</a>
+                    <a href="teacherdark.html" class="nav-link">Преподаватели</a>
+                    <a href="contactsdark.html" class="nav-link active">Контакты</a>
+                    <a href="contacts.html" class="theme-toggle" aria-label="Переключить на светлую тему">
+                        <span class="theme-icon">
+                            <i class="fas fa-sun"></i>
+                        </span>
+                    </a>
+                </nav>
+                <button class="mobile-menu-btn" id="menuBtn">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-contacts">
+        <div class="container">
+            <h1 class="hero-title">Свяжитесь с нами</h1>
+            <p class="hero-subtitle">Мы всегда рады ответить на ваши вопросы и помочь с выбором обучения</p>
+        </div>
+    </section>
+
+    <!-- Contact Methods -->
+    <section class="contact-methods">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Phone -->
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3 class="contact-title">Телефон</h3>
+                    <p class="contact-info">+7 (999) 123-45-67</p>
+                    <p class="contact-description">Звонок бесплатный по России</p>
+                    <button class="btn btn-outline contact-btn" data-contact="phone">Позвонить</button>
+                </div>
+
+                <!-- Email -->
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="contact-title">Электронная почта</h3>
+                    <p class="contact-info">vsevolodglotov9875@gmail.com</p>
+                    <p class="contact-description">Ответим в течение 24 часов</p>
+                    <button class="btn btn-outline contact-btn" data-contact="email">Написать</button>
+                </div>
+
+                <!-- Address -->
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="contact-title">Офис</h3>
+                    <p class="contact-info">Воронеж</p>
+                    <p class="contact-description">Пн-Пт с 10:00 до 19:00</p>
+                    <button class="btn btn-outline contact-btn" data-contact="map">Как добраться</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media -->
+    <section class="social-media">
+        <div class="container">
+            <h2 class="section-title">Мы в соцсетях</h2>
+            <p class="section-subtitle">Подписывайтесь на наши страницы, чтобы быть в курсе новостей и акций</p>
+            
+            <div class="social-grid">
+                <!-- Telegram -->
+                <a href="https://t.me/NoSchool_cool" class="social-card" target="_blank">
+                    <div class="social-icon telegram">
+                        <i class="fab fa-telegram"></i>
+                    </div>
+                    <h3 class="social-title">Telegram</h3>
+                    <p class="social-description">Новости, анонсы и полезные материалы</p>
+                    <span class="social-handle">@noschool</span>
+                </a>
+
+                <!-- VK 
+                <a href="https://vk.com/noschool" class="social-card" target="_blank">
+                    <div class="social-icon vk">
+                        <i class="fab fa-vk"></i>
+                    </div>
+                    <h3 class="social-title">ВКонтакте</h3>
+                    <p class="social-description">Сообщество учеников и отзывы</p>
+                    <span class="social-handle">noschool</span>
+                </a>
+            -->
+                <!-- Profi.ru -->
+                <a href="https://profi.ru/geo-vrn/profile/GlotovVA16/?ysclid=mg5hjw0cwl309474084" class="social-card" target="_blank">
+                    <div class="social-icon profi">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="social-title">Profi.ru</h3>
+                    <p class="social-description">Наша страница на платформе Profi.ru</p>
+                    <span class="social-handle">noschool</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+<!-- Contact Form -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-info">
+                    <h2 class="section-title">Остались вопросы?</h2>
+                    <p class="section-subtitle">Заполните форму, и мы свяжемся с вами в ближайшее время</p>
+                    <div class="form-features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Ответим в течение 2 часов</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Поможем подобрать курс</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Бесплатная консультация</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" action="https://formspree.io/f/xdkwklpb" method="POST">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Сообщение</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Расскажите о ваших целях обучения..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Отправить сообщение</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Часто задаваемые вопросы</h2>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Как записаться на пробный урок?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Вы можете записаться на пробный урок через форму на сайте, по телефону или в наших соцсетях. Пробный урок длится 30 минут и проводится бесплатно.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Можно ли поменять преподавателя?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, вы можете поменять преподавателя в любой момент обучения. Мы подберем для вас нового наставника, который лучше подойдет под ваши цели и темп обучения.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Какие есть способы оплаты?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Мы принимаем оплату банковскими картами, через онлайн-банкинг, электронные кошельки и по безналичному расчету для юридических лиц.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo-container">
+                        <img src="img/icon.png" alt="NoSchool" class="footer-logo-image">
+                        <div class="footer-logo-text">
+                            <div class="footer-logo">NoSchool</div>
+                            <p>Онлайн-платформа для индивидуального обучения с лучшими преподавателями.</p>
+                        </div>
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://t.me/NoSchool_cool" target="_blank"><i class="fab fa-telegram"></i></a>
+                        <!-- <a href="https://vk.com/noschool" target="_blank"><i class="fab fa-vk"></i></a> -->
+                        <a href="https://profi.ru/geo-vrn/profile/GlotovVA16/?ysclid=mg5hjw0cwl309474084" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Компания</h3>
+                    <div class="footer-links">
+                        <a href="index.html">Главная</a>
+                        <a href="teacher.html">Преподаватели</a>
+                        <a href="contacts.html">Контакты</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Контакты</h3>
+                    <div class="footer-contacts">
+                        <p><i class="fas fa-phone"></i> +7 (999) 123-45-67</p>
+                        <p><i class="fas fa-envelope"></i> vsevolodglotov9875@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Воронеж, Автогенный переулок, 13</p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 NoSchool. Все права защищены.</p>
+                <p>Designed by @Charwwwf</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/contacts.js"></script>
+</body>
+</html>

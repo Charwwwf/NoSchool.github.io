@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Преподаватели - NoSchool</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style/teachers.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/png">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="header-inner">
+            <a href="index.html" class="logo">No<span class="logo-accent">School</span></a>
+            <nav class="nav" id="mainNav">
+                <a href="index.html" class="nav-link">Главная</a>
+                <a href="teacher.html" class="nav-link">Преподаватели</a>
+                <a href="contacts.html" class="nav-link">Контакты</a>
+                <a href="teacherdark.html" class="theme-toggle" aria-label="Переключить на темную тему">
+                    <span class="theme-icon">
+                        <i class="fas fa-moon"></i>
+                    </span>
+                </a>
+            </nav>
+            <button class="mobile-menu-btn" id="menuBtn">☰</button>
+        </div>
+    </div>
+</header>
+
+    <section class="hero-teachers">
+        <div class="container">
+            <h1 class="hero-title">Наши преподаватели</h1>
+            <p class="hero-subtitle">Профессионалы с опытом, которые помогут вам достичь ваших целей в обучении</p>
+        </div>
+    </section>
+
+    <!-- Teachers Grid -->
+    <section class="teachers-grid-section">
+        <div class="container">
+            <div class="teachers-grid">
+                <!-- Teacher 1 -->
+                <div class="teacher-card" data-category="physics math">
+                    <div class="teacher-header">
+                        <div class="teacher-avatar">
+                            <img src="img/Всеволод.jpg" alt="Всеволод Александрович">
+                        </div>
+                        <div class="teacher-basic-info">
+                            <h3 class="teacher-name">Всеволод Александрович</h3>
+                            <p class="teacher-subject">Физика, математика</p>
+                            <div class="teacher-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-value">4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="teacher-info">
+                        <p class="teacher-description">Я — Глотов Всеволод Александрович – репетитор по физике и математике. С самого начала обучения в институте работал репетитором! Мой стаж составляет более 5 лет. Был опыт работы в школе. На моём счету более 50 высокбальников (90+ баллов) по физике и более 60 по математике. Около 70 отличников по ОГЭ, а так же десятки довольных учеников с 5 по 9 классы! Особенностью моего ведения является то, что я учу учеников ДУМАТЬ, развиваться и радоваться успехам, а не просто запоминать алгоритмы решений и «натаскиваю»! Каждое моё занятие уникально, не упустите возможность !</p>
+                        <div class="teacher-stats">
+                            <div class="stat">
+                                <span class="stat-value">250+</span>
+                                <span class="stat-label">учеников</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">96%</span>
+                                <span class="stat-label">успех</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline">Записаться</button>
+                    </div>
+                </div>
+
+                <!-- Teacher 2 -->
+                <div class="teacher-card" data-category="math">
+                    <div class="teacher-header">
+                        <div class="teacher-avatar">
+                            <img src="img/Рисунок4.jpg" alt="Николай Николаевич">
+                        </div>
+                        <div class="teacher-basic-info">
+                            <h3 class="teacher-name">Николай Николаевич</h3>
+                            <p class="teacher-subject">Математика</p>
+                            <div class="teacher-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-value">4.8</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="teacher-info">
+                        <p class="teacher-description">Меня зовут Березин Николай Николаевич. Я являюсь студентом одного из лучших Российских ВУЗов (Московская Международная академия), а преподавать начал с самого начала поступления. За многолетний опыт работы я подготовил: Десятки высокобальников ЕГЭ по математике. Множество отличников ОГЭ, МЦКО, ВПР и других экзаменов. А также смог повысить успеваемость огромному количеству нуждающихся учеников. Особенностью моего ведения является отсутствие всякой агрессии и негатива, а также индивидуальный подход к КАЖДОМУ ученику Уверен, Вам понравятся мои занятия!</p>
+                        <div class="teacher-stats">
+                            <div class="stat">
+                                <span class="stat-value">180+</span>
+                                <span class="stat-label">учеников</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">94%</span>
+                                <span class="stat-label">успех</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline">Записаться</button>
+                    </div>
+                </div>
+
+                <!-- Teacher 3 -->
+                <div class="teacher-card" data-category="russian social">
+                    <div class="teacher-header">
+                        <div class="teacher-avatar">
+                            <img src="img/Рисунок6.png" alt="Мария Ивановна">
+                        </div>
+                        <div class="teacher-basic-info">
+                            <h3 class="teacher-name">Мария Ивановна</h3>
+                            <p class="teacher-subject">Русский язык, обществознание</p>
+                            <div class="teacher-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-value">4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="teacher-info">
+                        <p class="teacher-description">🙋‍♀️Здравствуйте!
+                            Меня зовут Кобяшева Мария Ивановна.
+                            Я репетитор по математике. Уже более 5 лет я помогаю не только подтянуть школьную программу, но и полюбить математику, научиться мыслить логически и уверенно решать задачи.
+                        </p>
+                        <div class="teacher-stats">
+                            <div class="stat">
+                                <span class="stat-value">300+</span>
+                                <span class="stat-label">учеников</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">92%</span>
+                                <span class="stat-label">успех</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline">Записаться</button>
+                    </div>
+                </div>
+
+                <!-- Teacher 4 -->
+                <div class="teacher-card" data-category="math programming">
+                    <div class="teacher-header">
+                        <div class="teacher-avatar">
+                            <img src="img/Рисунок8.png" alt="Степан Владимирович">
+                        </div>
+                        <div class="teacher-basic-info">
+                            <h3 class="teacher-name">Степан Владимирович</h3>
+                            <p class="teacher-subject">Математика, информатика</p>
+                            <div class="teacher-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-value">4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="teacher-info">
+                        <p class="teacher-description">Меня зовут Озеров Степан Владимирович. Являюсь студентом НИУ МГСУ, направление: Строительство уникальных зданий и сооружений, преподавательской деятельностью занимаюсь более 3 лет. Начинал с информатики, потом плавно перешел в математику. Мои ученики после первых занятий влюбляются в предмет, начинают проявлять повышенный интерес. Занятия проходят в теплой и дружелюбной обстановке. Я добр к ученикам, но требователен. Надеюсь, вам понравится мои занятия!</p>
+                        <div class="teacher-stats">
+                            <div class="stat">
+                                <span class="stat-value">150+</span>
+                                <span class="stat-label">учеников</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">98%</span>
+                                <span class="stat-label">успех</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline">Записаться</button>
+                    </div>
+                </div>
+
+                <!-- Teacher 5 -->
+                <div class="teacher-card" data-category="math">
+                    <div class="teacher-header">
+                        <div class="teacher-avatar">
+                            <img src="img/Рисунок7.png" alt="Попов Максим">
+                        </div>
+                        <div class="teacher-basic-info">
+                            <h3 class="teacher-name">Попов Максим</h3>
+                            <p class="teacher-subject">Математика</p>
+                            <div class="teacher-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating-value">4.7</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="teacher-info">
+                        <p class="teacher-description">Я Попов Максим, преподаю несколько лет. Я не просто учу предмету, я помогаю ученикам полюбить его и поверить в свои силы. Почему я? Умею находить общий язык с каждым: Создаю комфортную и дружелюбную атмосферу на занятиях, где не страшно задавать вопросы и ошибаться. Использую современные подходы: Онлайн-доски, интерактивные тесты, – все, чтобы обучение было интересным и эффективным. Сосредоточен на твоих целях: Помогу подготовиться к ОГЭ/экзаменам/тестам, подтянуть знания по школьной программе или просто углубиться в предмет. В школе мне не нравилось как объясняли математику, именно поэтому мне хочется учить детей простым и понятным языком, чего как раз не хватало мне. Моя главная цель: Увидеть, как ты растешь и развиваешься, как загораются твои глаза от новых знаний!</p>
+                        <div class="teacher-stats">
+                            <div class="stat">
+                                <span class="stat-value">120+</span>
+                                <span class="stat-label">учеников</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">90%</span>
+                                <span class="stat-label">успех</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline">Записаться</button>
+                    </div>
+                </div>
+
+                <!-- Teacher 6 -->
+                <div class="teacher-card" data-category="math">
+                    <div class="teacher-header">
+                        <div class="teacher-avatar">
+                            <img src="img/Рисунок5.jpg" alt="Владислав Леонидович">
+                        </div>
+                        <div class="teacher-basic-info">
+                            <h3 class="teacher-name">Владислав Леонидович</h3>
+                            <p class="teacher-subject">Математика</p>
+                            <div class="teacher-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-value">4.8</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="teacher-info">
+                        <p class="teacher-description">Шевченко Владислав Леонидович - репетитор по математике. Специализация: Подготовка к ОГЭ. Подготовка к ЕГЭ (базовый и профильный уровни). Помощь по школьной программе (5-11 классы). Повышение успеваемости. Ликвидация пробелов. Методология:  Индивидуальный подход к каждому ученику. Делаю акцент на понимание, а не на заучивание. Учу решать задачи, а не просто запоминать формулы. Формат: Индивидуальные онлайн-занятия с использованием интерактивной доски. Цель:  Дать уверенное понимание предмета и достижение ваших учебных задач— от высокой оценки на экзамене до повышения успеваемости в школе.</p>
+                        <div class="teacher-stats">
+                            <div class="stat">
+                                <span class="stat-value">200+</span>
+                                <span class="stat-label">учеников</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">95%</span>
+                                <span class="stat-label">успех</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline">Записаться</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2 class="cta-title">Не нашли подходящего преподавателя?</h2>
+            <p>Мы поможем вам выбрать идеального наставника для ваших целей</p>
+            <a href="contacts.html" class="btn">Связаться с нами</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo-container">
+                        <img src="img/icon.png" alt="NoSchool" class="footer-logo-image">
+                        <div class="footer-logo-text">
+                            <div class="footer-logo">NoSchool</div>
+                            <p>Онлайн-платформа для индивидуального обучения с лучшими преподавателями.</p>
+                        </div>
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://t.me/NoSchool_cool" target="_blank"><i class="fab fa-telegram"></i></a>
+                        <a href="https://profi.ru/geo-vrn/profile/GlotovVA16/?ysclid=mg5hjw0cwl309474084" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Компания</h3>
+                    <div class="footer-links">
+                        <a href="index.html">Главная</a>
+                        <a href="teacher.html">Преподаватели</a>
+                        <a href="contacts.html">Контакты</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="footer-heading">Поддержка</h3>
+                    <div class="footer-links">
+                        <a href="#">Помощь</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Условия использования</a>
+                        <a href="#">Политика конфиденциальности</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 NoSchool. Все права защищены.</p>
+                <p>Designed by @Charwwwf</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/teacher.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html>
